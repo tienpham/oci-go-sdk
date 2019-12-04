@@ -46,7 +46,7 @@ type WafLog struct {
 	// A map of protection rule keys to detection message details. Detections are
 	// requests that matched the criteria of a protection rule but the rule's
 	// action was set to `DETECT`.
-	ProtectionRuleDetections map[string]string `mandatory:"false" json:"protectionRuleDetections"`
+	ProtectionRuleDetections map[string]interface{} `mandatory:"false" json:"protectionRuleDetections"`
 
 	// The HTTP method of the request.
 	HttpMethod *string `mandatory:"false" json:"httpMethod"`
